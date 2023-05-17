@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>calculater</h1>
+    <div id="result">
+        <input type="text" id="ipt" readonly>
+    </div>
+    <div id="result">
+        <input type="text" id="opt" readonly>
+    </div>
+    <table border="1" width="300" height="500">
+        <tr>
+            <td colspan="2" onclick="Power()">pow</td>
+            <td colspan="2" onclick="allClear()">C</td>
+        </tr>
+        <tr>
+            <td onclick="send(7)">7</td>
+            <td onclick="send(8)">8</td>
+            <td onclick="send(9)">9</td>
+            <td onclick="divide()">÷</td>
+        </tr>
+        <tr>
+            <td onclick="send(4)">4</td>
+            <td onclick="send(5)">5</td>
+            <td onclick="send(6)">6</td>
+            <td onclick="multiply()">x</td>
+        </tr>
+        <tr>
+            <td onclick="send(1)">1</td>
+            <td onclick="send(2)">2</td>
+            <td onclick="send(3)">3</td>
+            <td onclick="minus()">-</td>
+        </tr>
+        <tr>
+            <td onclick="send('.')">.</td>
+            <td onclick="send(0)">0</td>
+            <td id="output" onclick="calc()">=</td>
+            <td onclick="plus()">+</td>
+        </tr>
+    </table>
+    <script src="./index.js"></script>
+</body>
+
+</html>

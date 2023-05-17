@@ -1,0 +1,49 @@
+table {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    color: brown;
+}
+
+tr {
+    background-color: gray;
+}
+
+td:hover {
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+#result {
+    margin: 0;
+    text-align: center;
+}
+
+#ipt,
+#opt {
+    width: 280px;
+    margin: 0;
+    text-align: right;
+    border: 1px solid gray;
+}
+
+#ipt {
+    border-bottom: none;
+}
+
+#opt {
+    border-top: none;
+}
+
+#output {
+    background-color: blue;
+}
